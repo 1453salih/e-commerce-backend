@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:example@localhost:27017
+      database: e-commerce
+  jackson:
+    property-naming-strategy: SNAKE_CASE  # MongoDB belgelerinde snake_case için
+logging:
+  level:
+    org.springframework.data.mongodb: DEBUG  # MongoDB sorguları için debug
+server:
+  port: 8080
